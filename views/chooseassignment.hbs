@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="navbar">
+        <nav class=" blue-grey darken-2">
+            <div class="nav-wrapper">
+                <a href="#!" class="" style="padding-left:10px;">SQL grader</a>
+                <ul class="right on-med-and-down">
+                    <li><a href="/manageassignment">Manage Assingmnet</a></li>
+                    <li><a href="/chooseassignment">Do Assignment</a></li>
+                    <li><a href="/score">Score</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row  blue-grey lighten-1">
+            <div class="col s2"></div>
+            <div class="col s8">
+                <div class="row">
+                    <h5 class="white-text">Choose Assignment</h5>
+                    <form class="container">
+                        <table class="bordered   centered blue-grey darken-1 white-text">
+                            <thead>
+                                <tr>
+                                    <th>Number</th>
+                                    <th>Assignment Name</th>
+                                    <th>Assignment Description </th>
+                                    <th>Go To</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each title}}
+                                <tr>
+                                    <td>{{id}}</td>
+                                    <td>{{name}}</td>
+                                    <td>{{description}}</td>
+                                    <td>
+                                        <a href='/index/{{id}}'>
+                                            <input class="btn waves-effect waves-light green" name="go" value="GO" type="submit">
+                                        </a>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col s2"></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+
+</html>

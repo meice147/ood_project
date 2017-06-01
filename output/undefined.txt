@@ -1,0 +1,1 @@
+[{"id":1,"name":"Ramesh","salary":"2000.00"},{"id":2,"name":"Khilan","salary":"1500.00"},{"id":3,"name":"kaushik","salary":"2000.00"},{"id":4,"name":"Chaitali","salary":"6500.00"},{"id":5,"name":"Hardik","salary":"8500.00"},{"id":6,"name":"Komal","salary":"4500.00"}]

@@ -1,0 +1,17 @@
+.Indigo {
+    background-color: #3F51B5;
+}
+
+.row {
+    padding-top: 2%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.padding30 {
+    padding-bottom: 30px;
+}
